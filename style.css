@@ -1,0 +1,16 @@
+.hero_table-item {
+    padding: 5px;
+    border: 1px solid black;
+    color:green;
+    background: lightgrey;
+}
+
+
+
+@media print {
+
+    .table-select, .buttons, #check, tr:not(.printme){
+        display: none;
+    }
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <table id="hero_table" name="table">
+        <thead>
+            <tr class="printme">
+                <th data-type="string" class="clickTop">Name<span id="icon"></span></th>
+                <th data-type="number" class="clickTop">Height<span></span></th>
+                <th data-type="number" class="clickTop">Mass<span></span></th>
+                <th data-type="string" class="clickTop">Hair Color</th>
+                <th data-type="string" class="clickTop">Skin Color</th>
+                <th data-type="string" class="clickTop">Eye Color</th>
+                <th data-type="string" class="clickTop">Birth year</th>
+                <th>Select</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody" class="sort1">
+
+        </tbody>
+    </table>
+
+    <!--<div class="test">Test block</div>-->
+
+    <div class="buttons">
+        <!--<a href="javascript:window.print()">Print</a>-->
+        <button onclick="printSelected()">Print Selected</button><br>
+
+        <textarea id="textareaToPrint" placeholder="To print"></textarea>
+        <button onclick="printTextarea()">Print</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
